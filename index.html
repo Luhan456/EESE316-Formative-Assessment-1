@@ -1,0 +1,54 @@
+<!-- Luhan Lingnau C22363 EESE316 Formative Assesment 1 -->
+<!-- HTML Main website  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Engineering Survey Form</h1>
+        <p id="description">Please fill out this Survey</p>
+    </header>
+
+    <form class="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" min=   "18" max="100" placeholder="Enter your Age" required>
+
+        <label for="dropdown">Current Role:</label>
+        <select id="dropdown">
+            <option value="" disabled selected>For Example: Student or Engineer</option> <!--"Placeholder" for dropdown list-->
+            <option value="option1">Fulltime Student</option>
+            <option value="option2">Engineering Intern</option>
+            <option value="option3">Fulltime Engineer</option>
+        </select>
+
+        <label>What is your hobies or interest? (Check all that apply)</label>
+        <input type="checkbox" id="option1" value="option1">
+        <label for="option1">Robotics</label>
+        <input type="checkbox" id="option2" value="option2">
+        <label for="option2">PCB Design</label>
+        <input type="checkbox" id="option3" value="option3">
+        <label for="option3">Web Development</label>
+        <input type="checkbox" id="option4" value="option4">
+        <label for="option4">Embedded Software</label>
+        
+
+        <button type="submit" id="submit">Sumbit</button>
+    </form>
+
+    <footer>
+        <p>Luhan Lingnau, C22363</p>
+    </footer>
+    
+</body>
+</html>

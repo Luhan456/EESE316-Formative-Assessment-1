@@ -1,0 +1,56 @@
+/* Luhan Lingnau C22363 EESE316 Formative Assesment 1 */
+/* CSS style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white; /*All the text in the body except inside input fields is white*/
+    background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; /*Will not repeat background image if resolution does not match*/
+}
+
+header{
+    text-align: center;
+    padding: 20px; /*Padding is the space between the content of an element and it's border*/
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.survey-form{
+    /* Specified Color */
+    background-color: rgba(136, 136, 206, 0.7);
+    max-width: 800px; /*Adjusts the width of the survey form*/
+    padding: 20px;
+    margin: 20px auto; /*Centers the form horizontally*/
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, button{
+    width: 98%; /*Set to 98% To match the margins of the input fields to match the survey form*/
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    /* Specified Color */
+    background-color: rgb(0, 200, 100); /*Red: 0, Green: 200, Blue: 100*/
+    /* Specified Color */
+    color: white;
+    cursor: crosshair; /*Makes the cursor a crosshair when hovered over the button*/
+}
+
+label{
+    display: block; /*Sets display property from dafault: inline, to block*/
+    margin-bottom: 5px; /*Adjusts spacing between fields*/
+}
+
+/* Bonus */
+button:hover{
+    /* Specified Color */
+    background-color: #1b1b32da; /*Changes color of button when overed over*/
+}
